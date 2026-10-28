@@ -1,0 +1,53 @@
+/* ============================================================
+   responsive.css — Layout adaptation 320 → 1440
+   Breakpoints tested: 320, 375, 430, 768, 1024, 1280, 1440
+   ============================================================ */
+
+/* ---------- ≤ 1024px : collapse to 2-column card grids ---------- */
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; text-align: center; gap: var(--sp-6); }
+  .hero-cta, .hero .roles { justify-content: center; }
+  .hero-sub { margin-inline: auto; }
+  .hero-portrait { order: -1; }
+  .cert-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .ai-feature, .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- ≤ 768px : switch to mobile nav, single-column charts ---------- */
+@media (max-width: 768px) {
+  :root { --sp-section: clamp(2.75rem, 2rem + 3vw, 4rem); }
+  .nav-desktop { display: none; }
+  .hamburger { display: inline-flex; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .chart-wrap { height: 260px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- ≤ 560px : all card grids single column ---------- */
+@media (max-width: 560px) {
+  .cert-grid, .projects-grid, .tech-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .container { padding-inline: var(--sp-4); }
+  .site-footer .container { flex-direction: column; text-align: center; }
+  .chat-window { right: 12px; left: 12px; bottom: 84px; width: auto; }
+  .chat-fab { bottom: 16px; right: 16px; }
+}
+
+/* ---------- ≤ 375px : tighten the smallest phones ---------- */
+@media (max-width: 375px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+  .hero .roles { font-size: var(--fs-300); }
+  .btn { padding-inline: var(--sp-4); }
+}
+
+/* ---------- ≤ 320px : absolute floor, prevent overflow ---------- */
+@media (max-width: 320px) {
+  html { font-size: 15px; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .filter-tabs { gap: 6px; }
+}
+
+/* ---------- ≥ 1280px : generous desktop spacing ---------- */
+@media (min-width: 1280px) {
+  .container { padding-inline: var(--sp-6); }
+}

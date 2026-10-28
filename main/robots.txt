@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# NEEDS USER INPUT: confirm final domain, then publish sitemap.xml at this path.
+Sitemap: https://thea-kakda.github.io/sitemap.xml

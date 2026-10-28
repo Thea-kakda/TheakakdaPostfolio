@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thea Kakda | Full-Stack Developer, Database & Network Engineer</title>
+  <meta name="description" content="Portfolio of Thea Kakda — Full-Stack Developer, Database Designer, Network Engineer and ERP System Developer from Phnom Penh, Cambodia. Next.js, Laravel, PHP, Java/Spring Boot, PostgreSQL, Cisco, MikroTik and UI/UX.">
+  <meta name="author" content="Thea Kakda">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05070C">
+  <link rel="canonical" href="https://thea-kakda.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Thea Kakda | Portfolio">
+  <meta property="og:description" content="Full-Stack Developer, Database Designer, Network Engineer & ERP System Developer.">
+  <meta property="og:url" content="https://thea-kakda.github.io/">
+  <meta property="og:image" content="https://thea-kakda.github.io/assets/profile/me1.png">
+  <meta property="og:site_name" content="Thea Kakda Portfolio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thea Kakda | Portfolio">
+  <meta name="twitter:description" content="Full-Stack Developer, Database Designer, Network Engineer & ERP System Developer.">
+  <meta name="twitter:image" content="https://thea-kakda.github.io/assets/profile/me1.png">
+
+  <link rel="icon" type="image/png" href="./assets/profile/me1.png">
+
+  <!-- Structured data — only fields verifiable from the repository. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Thea Kakda",
+        "jobTitle": ["Full Stack Developer", "Database Designer", "Network Engineer", "ERP System Developer"],
+        "url": "https://thea-kakda.github.io/",
+        "sameAs": ["https://thea-kakda.github.io/"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Phnom Penh", "addressCountry": "Cambodia" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Royal University of Phnom Penh (RUPP)" },
+          { "@type": "EducationalOrganization", "name": "ETEC Center" },
+          { "@type": "EducationalOrganization", "name": "JomNum Tech Center" }
+        ],
+        "knowsAbout": ["Next.js","Laravel","PHP","Java","Spring Boot","PostgreSQL","MySQL","SQL Server","DBML","Cisco","MikroTik","Linux","Wireshark","EVE-NG","Figma","Adobe XD"]
+      },
+      { "@type": "WebSite", "url": "https://thea-kakda.github.io/", "name": "Thea Kakda Portfolio", "inLanguage": ["en", "km"] },
+      { "@type": "ProfilePage", "url": "https://thea-kakda.github.io/", "mainEntity": { "@type": "Person", "name": "Thea Kakda" } }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+Khmer:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="brand">THEA KAKDA</a>
+      <nav class="nav-desktop" aria-label="Primary" data-i18n-aria-label="nav.primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#tech" data-i18n="nav.tech">Tech Stack</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <div id="lang-switch" class="lang-switch" role="group" aria-label="Select language" data-i18n-aria-label="lang.switch"></div>
+        <button id="menu-toggle" class="hamburger" type="button" aria-label="Open navigation menu" data-i18n-aria-label="menu.open" aria-controls="mobile-menu" aria-expanded="false">
+          <i data-lucide="menu" style="width:24px;height:24px"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile" data-i18n-aria-label="nav.mobile">
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a>
+    <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <a href="#education" data-i18n="nav.education">Education</a>
+    <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+    <a href="#projects" data-i18n="nav.projects">Projects</a>
+    <a href="#tech" data-i18n="nav.tech">Tech Stack</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <main id="main">
+    <!-- ============ 1. HERO ============ -->
+    <section id="hero" class="section">
+      <div class="container hero">
+        <div>
+          <span class="status-badge"><span class="dot-live" aria-hidden="true"></span><span data-i18n="hero.status">Open for Freelance &amp; Internships</span></span>
+          <h1>THEA&nbsp;<span class="role">KAKDA</span></h1>
+          <ul class="roles" aria-label="Professional roles" data-i18n-aria-label="hero.roles">
+            <li data-i18n="hero.role1">Full Stack Developer</li>
+            <li>·</li><li data-i18n="hero.role2">Database Designer</li>
+            <li>·</li><li data-i18n="hero.role3">Network Engineer</li>
+            <li>·</li><li data-i18n="hero.role4">ERP System Developer</li>
+          </ul>
+          <p class="hero-sub" data-i18n="hero.tagline">Building scalable software, enterprise systems, network solutions, and AI-assisted applications.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">View Projects</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Contact Me</a>
+            <a href="assets/CV/TheaKakda_CV.pdf.pdf" class="btn btn-ghost" data-i18n="hero.cta3" download>Download CV</a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <canvas id="particles" class="particle-canvas" aria-hidden="true"></canvas>
+          <div class="ring" >
+            <img src="./assets/profile/me1.png" alt="Portrait of Thea Kakda" data-i18n-alt="hero.portrait.alt"  width="842" height="1264" decoding="async" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">01</span><h2 data-i18n="nav.about">About Me</h2></div></div>
+        <div class="ai-feature">
+          <div class="panel" data-reveal>
+            <h3 data-i18n="about.card1.title">Software Developer &amp; Systems Thinker</h3>
+            <p style="margin-top:12px" data-i18n="about.card1.p1">Highly motivated and detail-oriented Software Developer with knowledge in Web Development, Java Programming, Database Design and ERP Systems. Experienced building responsive web applications using HTML, CSS, JavaScript, PHP, Laravel, MySQL, PostgreSQL and SQL Server.</p>
+            <p style="margin-top:12px" data-i18n="about.card1.p2">Currently studying Java, Spring Boot, Database Modeling &amp; Analysis and Enterprise Software Development. Skilled in Database Modeling (Conceptual, Logical, Physical), ERD Design, Normalization, SQL Query Optimization and System Analysis.</p>
+          </div>
+          <div class="panel" data-reveal data-delay="1">
+            <h3 data-i18n="about.card2.title">Quick Info</h3>
+            <div class="contact-links" style="margin-top:12px">
+              <span class="contact-link"><i data-lucide="mail" style="width:18px;height:18px"></i> theakakda60@gmail.com</span>
+              <span class="contact-link"><i data-lucide="phone" style="width:18px;height:18px"></i> (885) 716-102-320</span>
+              <span class="contact-link"><i data-lucide="map-pin" style="width:18px;height:18px"></i> Phnom Penh, Cambodia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. STATS ============ -->
+    <section id="stats" class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="panel stat-card" data-reveal><p class="stat-num" data-count="3">3</p><p class="stat-label" data-i18n="stats.projects">Projects</p><p class="stat-note" data-i18n="stats.note.projects">counted from Projects below</p></div>
+          <div class="panel stat-card" data-reveal data-delay="1"><p class="stat-num" data-count="8">8</p><p class="stat-label" data-i18n="stats.certs">Certificates</p><p class="stat-note" data-i18n="stats.note.certs">9 source cards, 1 duplicate CCNA removed</p></div>
+          <div class="panel stat-card" data-reveal data-delay="2"><p class="stat-num" data-count="23">23</p><p class="stat-label" data-i18n="stats.tech">Technologies</p><p class="stat-note" data-i18n="stats.note.tech">listed in Skills &amp; Tech Stack</p></div>
+          <div class="panel stat-card" data-reveal data-delay="3"><p class="stat-num" data-count="4">4</p><p class="stat-label" data-i18n="stats.education">Education</p><p class="stat-note" data-i18n="stats.note.education">High School · RUPP · ETEC · JomNumtech</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">02</span><h2 data-i18n="skills.title">Skills</h2></div></div>
+        <div class="skills-grid">
+          <div class="panel skill-group" data-cat="frontend" data-reveal>
+            <div class="cat-icon"><i data-lucide="code-2" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.frontend">Frontend</h3>
+            <div class="items"><span class="chip">Bootstrap</span><span class="chip">Next.js</span><span class="chip">Vue.js</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+          </div>
+          <div class="panel skill-group" data-cat="backend" data-reveal data-delay="1">
+            <div class="cat-icon"><i data-lucide="server" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.backend">Backend</h3>
+            <div class="items"><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">REST API</span></div>
+          </div>
+          <div class="panel skill-group" data-cat="database" data-reveal data-delay="2">
+            <div class="cat-icon"><i data-lucide="database" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.database">Database</h3>
+            <div class="items"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">SQL Server</span><span class="chip">SQLite</span><span class="chip">DBML</span><span class="chip">ERD</span></div>
+          </div>
+          <div class="panel skill-group" data-cat="network" data-reveal>
+            <div class="cat-icon"><i data-lucide="network" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.networking">Networking</h3>
+            <div class="items"><span class="chip">Cisco</span><span class="chip">MikroTik</span><span class="chip">Linux</span><span class="chip">Wireshark</span><span class="chip">EVE-NG</span></div>
+          </div>
+          <div class="panel skill-group" data-cat="design" data-reveal data-delay="1">
+            <div class="cat-icon"><i data-lucide="palette" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.design">Design</h3>
+            <div class="items"><span class="chip">Figma</span><span class="chip">V0</span><span class="chip">Adobe XD</span><span class="chip">Photoshop</span></div>
+          </div>
+          <div class="panel skill-group" data-cat="ai" data-reveal data-delay="2">
+            <div class="cat-icon"><i data-lucide="sparkles" style="width:22px;height:22px"></i></div>
+            <h3 data-i18n="skills.aitools">AI Tools</h3>
+            <div class="items"><span class="chip">DeepSeek</span><span class="chip">Gemini</span><span class="chip">OpenAI</span><span class="chip">Claude</span><span class="chip">Cursor</span><span class="chip">Qoder</span><span class="chip">Copilot</span><span class="chip">V0</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. DEVELOPER DASHBOARD ============ -->
+    <section id="dashboard" class="section" aria-labelledby="dashboard-title">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">03</span><h2 id="dashboard-title" data-i18n="dashboard.title">Developer Dashboard</h2>
+          <p class="lead" data-i18n="dashboard.lead">Visual summary of the data already published on this page. Chart.js loads only when this section enters the viewport.</p></div></div>
+        <div class="charts-grid">
+          <div class="panel chart-card" data-reveal>
+            <h3 data-i18n="dashboard.chart.skills">Skill Distribution</h3>
+            <p class="dash-note note-illustrative" data-i18n="dashboard.note.illustrative">Illustrative values – not measured proficiency</p>
+            <div class="chart-wrap"><canvas id="chart-skills" role="img" aria-label="Radar chart of skill areas using illustrative, non-measured values" data-i18n-aria-label="dashboard.chart.skills.aria"></canvas></div>
+          </div>
+          <div class="panel chart-card" data-reveal data-delay="1">
+            <h3 data-i18n="dashboard.chart.certs">Certificates by Category</h3>
+            <p class="dash-note" data-i18n="dashboard.note.certcounts">Counts derived from the certificate gallery below</p>
+            <div class="chart-wrap"><canvas id="chart-certs" role="img" aria-label="Doughnut chart of certificates grouped by domain" data-i18n-aria-label="dashboard.chart.certs.aria"></canvas></div>
+          </div>
+          <div class="panel chart-card" data-reveal>
+            <h3 data-i18n="dashboard.chart.tech">Technology Mentions</h3>
+            <p class="dash-note" data-i18n="dashboard.note.techmentions">Portfolio mentions, not proficiency</p>
+            <div class="chart-wrap"><canvas id="chart-tech" role="img" aria-label="Horizontal bar chart of confirmed technologies" data-i18n-aria-label="dashboard.chart.tech.aria"></canvas></div>
+          </div>
+          <div class="panel chart-card" data-reveal data-delay="1">
+            <h3 data-i18n="dashboard.chart.timeline">Learning Timeline</h3>
+            <p class="dash-note" data-i18n="dashboard.note.timeline">Years taken only from Education &amp; Experience entries</p>
+            <div class="chart-wrap"><canvas id="chart-timeline" role="img" aria-label="Timeline of education and experience by year" data-i18n-aria-label="dashboard.chart.timeline.aria"></canvas></div>
+          </div>
+        </div>
+        <div id="chat-analytics" class="panel" style="margin-top:var(--sp-5);display:flex;flex-wrap:wrap;gap:var(--sp-6);align-items:center">
+          <h3 style="font-size:var(--fs-500)" data-i18n="dashboard.activity">Assistant Activity</h3>
+          <div><span class="chip"><span data-i18n="dashboard.activity.q">Questions this session:</span> <strong data-analytics-questions style="margin-left:6px">0</strong></span></div>
+          <div><span class="chip"><span data-i18n="dashboard.activity.topics">Common topics:</span> <strong data-analytics-topics style="margin-left:6px">—</strong></span></div>
+          <p class="dash-note" style="width:100%;color:var(--text-faint)" data-i18n="dashboard.activity.note">Local session only. No tracking, no cookies, nothing stored or sent.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ 6. EXPERIENCE ============ -->
+
+<section id="experience" class="section" aria-labelledby="experience-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">04</span>
+        <h2 id="experience-title" data-i18n="experience.title">
+          Projects &amp; School Experience
+        </h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Smart Coffee & Bakery ERP -->
+      <div class="timeline-item panel" data-reveal>
+        <span class="when">2026 — Present</span>
+
+        <h3 data-i18n="experience.smartCoffee.title">
+          Full-Stack Developer — Smart Coffee &amp; Bakery ERP
+        </h3>
+
+        <p class="org" data-i18n="experience.smartCoffee.org">
+          Personal Software Development Project
+        </p>
+
+        <ul>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.smartCoffee.point1">
+              Developing a coffee shop and bakery management system using
+              Spring Boot, Next.js, React, and PostgreSQL.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.smartCoffee.point2">
+              Building REST APIs, authentication, product management,
+              inventory features, and role-based access control.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.smartCoffee.point3">
+              Developing the management dashboard, staff POS tablet,
+              and customer storefront.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Java Inventory Management System -->
+      <div class="timeline-item panel" data-reveal data-delay="1">
+        <span class="when">2026</span>
+
+        <h3 data-i18n="experience.inventory.title">
+          Java Developer — Inventory Management System
+        </h3>
+
+        <p class="org" data-i18n="experience.inventory.org">
+          Personal Java Project
+        </p>
+
+        <ul>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.inventory.point1">
+              Developed a Java console application for managing products,
+              categories, stock quantities, and transactions.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.inventory.point2">
+              Implemented CSV-based data handling and applied
+              object-oriented programming principles.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.inventory.point3">
+              Successfully ran 44 automated tests.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RUPP Mobile Cafe -->
+      <div class="timeline-item panel" data-reveal>
+        <span class="when">2026</span>
+
+        <h3 data-i18n="experience.cafeApp.title">
+          Team Lead / UI/UX &amp; Requirements — Mobile Cafe App
+        </h3>
+
+        <p class="org" data-i18n="experience.cafeApp.org">
+          Royal University of Phnom Penh (RUPP) · Academic Team Project
+        </p>
+
+        <ul>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.cafeApp.point1">
+              Collaborated with an eight-member student team on a mobile
+              cafe application and owner-side experience.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.cafeApp.point2">
+              Contributed to cafe workflows, project requirements,
+              UI/UX concepts, and Figma prototypes.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ETEC Center -->
+      <div class="timeline-item panel" data-reveal data-delay="1">
+        <span class="when">2023 — 2025</span>
+
+        <h3 data-i18n="experience.etec.title">
+          IT Training — UI/UX, Web Development &amp; Networking
+        </h3>
+
+        <p class="org" data-i18n="experience.etec.org">
+          ETEC Center · Technical Training
+        </p>
+
+        <ul>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--c-network)"></i>
+            <span data-i18n="experience.etec.point1">
+              Studied UI/UX design, front-end development,
+              back-end development, and networking.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--c-network)"></i>
+            <span data-i18n="experience.etec.point2">
+              Practiced web development fundamentals, interface design,
+              and technical problem-solving.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- JomNumTech -->
+      <div class="timeline-item panel" data-reveal>
+        <span class="when">2025 — 2026</span>
+
+        <h3 data-i18n="experience.jomNumTech.title">
+          Database Modeling, Java &amp; Python Programming
+        </h3>
+
+        <p class="org" data-i18n="experience.jomNumTech.org">
+          JomNumTech Online School · Scholarship-Supported Training
+        </p>
+
+        <ul>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.jomNumTech.point1">
+              Completed training in Database Modeling and Java Programming.
+            </span>
+          </li>
+          <li>
+            <i data-lucide="check-circle-2"
+               style="width:16px;height:16px;color:var(--brand-accent)"></i>
+            <span data-i18n="experience.jomNumTech.point2">
+              Continuing Python Programming training to strengthen
+              programming fundamentals and problem-solving skills.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- ============ 7. EDUCATION ============ -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">05</span><h2 data-i18n="education.title">Education</h2></div></div>
+        <div class="edu-grid">
+          <div class="panel" data-reveal><span class="chip chip-accent">2022 — Present</span><h3 style="margin-top:12px" data-i18n="education.bsc.title">Bachelor of Computer Science</h3><p class="text-muted" data-i18n="education.bsc.org">Royal University of Phnom Penh (RUPP)</p></div>
+          <div class="panel" data-reveal data-delay="1"><span class="chip chip-accent">2022 — 2025</span><h3 style="margin-top:12px" data-i18n="education.etec.title">Network Administration &amp; Cybersecurity · UI/UX · Web</h3><p class="text-muted" data-i18n="education.etec.desc">ETEC Center — Cisco, MikroTik, Linux, Wireshark, front-end &amp; back-end.</p></div>
+          <div class="panel" data-reveal><span class="chip chip-accent">JomNum Tech</span><h3 style="margin-top:12px" data-i18n="education.jnt.title">Java Development · Database Modeling &amp; Analysis</h3><p class="text-muted" data-i18n="education.jnt.desc">Java Core, OOP; ERD, DBML, Normalization, SQL Design, Database Architecture and Python.</p></div>
+          <div class="panel" data-reveal data-delay="1"><span class="chip chip-accent">2015 — 2022</span><h3 style="margin-top:12px" data-i18n="education.hs.title">High School Diploma</h3><p class="text-muted" data-i18n="education.hs.desc">Techo Hun Sen Suong High School — science track.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CERTIFICATE GALLERY ============ -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">06</span><h2 data-i18n="certificates.title">Certificate Gallery</h2>
+          <p class="lead"><span data-i18n="certs.lead1">Click any card to preview. Filter by category. Verification links are </span><strong>NEEDS USER INPUT</strong><span data-i18n="certs.lead2"> — no links are invented.</span></p></div></div>
+        <div class="filter-tabs" role="group" aria-label="Filter certificates" data-i18n-aria-label="certs.filter">
+          <button class="filter-tab" type="button" data-filter="all" aria-pressed="true" data-i18n="gallery.all">All</button>
+          <button class="filter-tab" type="button" data-filter="programming" aria-pressed="false" data-i18n="gallery.programming">Programming</button>
+          <button class="filter-tab" type="button" data-filter="networking" aria-pressed="false" data-i18n="gallery.networking">Networking</button>
+          <button class="filter-tab" type="button" data-filter="database" aria-pressed="false" data-i18n="gallery.database">Database</button>
+          <button class="filter-tab" type="button" data-filter="uiux" aria-pressed="false" data-i18n="gallery.uiux">UI/UX</button>
+        </div>
+        <div id="cert-grid" class="cert-grid">
+          <article class="cert-card panel" data-domain="programming" data-full="./assets/certificates/oop.jpg" data-alt="C / C++ and OOP certificate" data-title="C / C++ &amp; OOP" data-issuer="ETEC Center" data-date="Issued: September 15, 2024" data-desc="Basic, Advanced C/C++, OOP and Project Courses." data-title-key="certs.oop.title" data-desc-key="certs.oop.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/oop.jpg" alt="C / C++ and OOP certificate" width="908" height="1280" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.oop.title">C / C++ &amp; OOP</span><span class="meta"><span>Sep 15, 2024</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="networking" data-full="./assets/certificates/cisco-packet-tracer.jpg" data-alt="Cisco Packet Tracer certificate" data-title="Cisco Packet Tracer" data-issuer="ETEC Center" data-date="Issued: May 15, 2025" data-desc="Basic Computer Networking &amp; Configuration." data-title-key="certs.cisco.title" data-desc-key="certs.cisco.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/cisco-packet-tracer.jpg" alt="Cisco Packet Tracer certificate" width="1280" height="960" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.cisco.title">Cisco Packet Tracer</span><span class="meta"><span>May 15, 2025</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="other" data-full="./assets/certificates/hardware.jpg" data-alt="Hardware Specialist certificate" data-title="Hardware Specialist" data-issuer="ETEC Center" data-date="Issued: August 15, 2024" data-desc="Computer Networking &amp; System Installation." data-title-key="certs.hw.title" data-desc-key="certs.hw.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/hardware.jpg" alt="Hardware Specialist certificate" width="909" height="1280" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.hw.title">Hardware Specialist</span><span class="meta"><span>Aug 15, 2024</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="networking" data-full="./assets/certificates/mikrotik.jpg" data-alt="MikroTik MTCNA certificate" data-title="MikroTik MTCNA" data-issuer="ETEC Center" data-date="Issued: June 15, 2025" data-desc="Advanced MikroTik RouterOS &amp; Configuration." data-title-key="certs.mikrotik.title" data-desc-key="certs.mikrotik.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/mikrotik.jpg" alt="MikroTik MTCNA certificate" width="930" height="1280" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.mikrotik.title">MikroTik MTCNA</span><span class="meta"><span>Jun 15, 2025</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="uiux" data-full="./assets/certificates/uiux.jpg" data-alt="UX/UI Design certificate" data-title="UI/UX Design" data-issuer="ETEC Center" data-date="Issued: March 15, 2025" data-desc="Advanced UX/UI Design &amp; Project Prototyping." data-title-key="certs.uiux.title" data-desc-key="certs.uiux.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/uiux.jpg" alt="UX/UI Design certificate" width="1280" height="960" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.uiux.title">UI/UX Design</span><span class="meta"><span>Mar 15, 2025</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="programming" data-full="./assets/certificates/web-frontend.jpg" data-alt="Web Frontend certificate" data-title="Web Frontend" data-issuer="ETEC Center" data-date="Issued: 2026" data-desc="HTML, CSS, JS, Vue.js &amp; Modern Frameworks." data-title-key="certs.webfe.title" data-desc-key="certs.webfe.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/web-frontend.jpg" alt="Web Frontend certificate" width="1280" height="960" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">ETEC Center</span><span class="title" data-i18n="certs.webfe.title">Web Frontend</span><span class="meta"><span>2026</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="networking" data-full="./assets/certificates/ccna.jpg" data-alt="CCNA Enterprise Networking, Security and Automation certificate" data-title="CCNA: Enterprise Networking, Security, and Automation" data-issuer="RUPP (Cisco Networking Academy)" data-date="Issued: 2026" data-desc="Cisco offered by Royal University of Phnom Penh through the Cisco Networking Academy program." data-title-key="certs.ccna.title" data-desc-key="certs.ccna.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/ccna.jpg" alt="CCNA certificate" width="1012" height="687" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">RUPP · Cisco NetAcad</span><span class="title" data-i18n="certs.ccna.title">CCNA: Enterprise Networking</span><span class="meta"><span>2026</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+          <article class="cert-card panel" data-domain="database" data-full="./assets/certificates/data-modeling.jpg" data-alt="Data Modeling certificate" data-title="Data Modeling" data-issuer="JomNum Tech" data-date="Issued: 2026" data-desc="Database Design, Relationships &amp; PostgreSQL." data-title-key="certs.dm.title" data-desc-key="certs.dm.desc" data-verify="NEEDS USER INPUT">
+            <div class="thumb"><img src="./assets/certificates/data-modeling.jpg" alt="Data Modeling certificate" width="3509" height="2481" loading="lazy" decoding="async"></div>
+            <div class="body"><span class="issuer">JomNum Tech</span><span class="title" data-i18n="certs.dm.title">Data Modeling</span><span class="meta"><span>2026</span><span class="badge-verify"><i data-lucide="shield-alert" style="width:14px;height:14px"></i> <span data-i18n="certs.unverified">Unverified</span></span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate modal -->
+    <div id="cert-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-dialog">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close certificate preview" data-i18n-aria-label="certs.close"><i data-lucide="x" style="width:20px;height:20px"></i></button>
+        <img data-modal-img alt="Certificate preview" width="900" height="640">
+        <div class="modal-info">
+          <span class="issuer" data-modal-issuer style="color:var(--brand-accent);text-transform:uppercase;letter-spacing:.14em;font-size:var(--fs-100)"></span>
+          <h3 id="cert-modal-title" data-modal-title style="color:var(--text-strong)"></h3>
+          <p data-modal-desc style="color:var(--text-body)"></p>
+          <p style="color:var(--text-muted);font-size:var(--fs-300)" data-modal-date></p>
+          <a data-modal-verify class="link-arrow" style="margin-top:8px" data-i18n="certs.verify">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 9. PROJECTS (case studies) ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">07</span><h2 data-i18n="projects.title">Featured Work</h2>
+          <p class="lead" data-i18n="projects.lead">Two near-duplicate workspace cards were merged; unverifiable/ambiguous links are marked NEEDS USER INPUT.</p></div></div>
+        <div class="projects-grid">
+          <article class="project-card panel" data-reveal>
+            <div class="media"><img src="./assets/projects/hanuman.png" alt="Hanuman website project screenshot" data-i18n-alt="projects.p1.alt" width="1919" height="946" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <h3 data-i18n="projects.p1.title">Hanuman Web Concept</h3>
+              <p data-i18n="projects.p1.desc">A modern marketing and promotional website concept designed for Hanuman, using a highly structured layout.</p>
+              <div class="tag-row"><span class="chip chip-accent">HTML5</span><span class="chip chip-accent">CSS3</span><span class="chip chip-accent">JavaScript</span></div>
+              <div class="foot"><a href="https://thea-kakda.github.io/" target="_blank" rel="noopener noreferrer" class="link-arrow"><span data-i18n="projects.view">View Project</span> <i data-lucide="arrow-up-right" style="width:16px;height:16px"></i></a></div>
+            </div>
+          </article>
+          <article class="project-card panel" data-reveal data-delay="1">
+            <div class="media"><img src="./assets/projects/shophub.png" alt="Interactive UI/UX workspace design mockup" data-i18n-alt="projects.p2.alt" width="1920" height="3535" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <h3 data-i18n="projects.p2.title">Interactive UI/UX Workspace</h3>
+              <p data-i18n="projects.p2.desc">Responsive dashboard layouts, custom UI components and wireframes focused on fluid navigation flows.</p>
+              <div class="tag-row"><span class="chip">Figma</span><span class="chip">Adobe Photoshop</span><span class="chip">Design Systems</span></div>
+              <div class="foot"><a href="https://www.figma.com/proto/sUIaqhWfo0RlymXkrSrszQ/Untitled" target="_blank" rel="noopener noreferrer" class="link-arrow"><span data-i18n="projects.viewFigma">View Figma Prototype</span> <i data-lucide="arrow-up-right" style="width:16px;height:16px"></i></a></div>
+            </div>
+          </article>
+          <article class="project-card panel" data-reveal data-delay="2">
+            <div class="media"><img src="./assets/projects/figma.png" alt="Portfolio website design mockup created in Figma" data-i18n-alt="projects.p3.alt" width="1914" height="942" loading="lazy" decoding="async"></div>
+            <div class="body">
+              <h3 data-i18n="projects.p3.title">Portfolio Website Design</h3>
+              <p data-i18n="projects.p3.desc">A web design concept showcasing skills and projects, designed in Figma, Adobe Photoshop and Adobe XD.</p>
+              <div class="tag-row"><span class="chip">Figma</span><span class="chip">Adobe XD</span><span class="chip">Photoshop</span></div>
+              <div class="foot"><a href="https://www.figma.com/design/lc6A5TTtZ7ZV6sAay6aBsx/Untitled" target="_blank" rel="noopener noreferrer" class="link-arrow"><span data-i18n="projects.viewDesign">View Design</span> <i data-lucide="arrow-up-right" style="width:16px;height:16px"></i></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. TECH STACK SHOWCASE ============ -->
+    <section id="tech" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">08</span><h2 data-i18n="tech.title">Technology Stack</h2></div></div>
+        <div class="tech-grid">
+          <div class="panel tech-card" data-reveal><div class="cat-icon"><i data-lucide="framework" style="width:20px;height:20px"></i></div><div class="name">Next.js</div><div class="role" data-i18n="skills.frontend">Frontend</div></div>
+          <div class="panel tech-card" data-reveal><div class="name">Laravel</div><div class="role" data-i18n="skills.backend">Backend</div></div>
+          <div class="panel tech-card" data-reveal data-delay="1"><div class="name">Vue.js</div><div class="role" data-i18n="skills.frontend">Frontend</div></div>
+          <div class="panel tech-card" data-reveal data-delay="1"><div class="name">Java</div><div class="role">Spring Boot</div></div>
+          <div class="panel tech-card" data-reveal data-delay="2"><div class="name">PHP</div><div class="role" data-i18n="skills.backend">Backend</div></div>
+          <div class="panel tech-card" data-reveal><div class="name">PostgreSQL</div><div class="role" data-i18n="skills.database">Database</div></div>
+          <div class="panel tech-card" data-reveal data-delay="1"><div class="name">MySQL</div><div class="role" data-i18n="skills.database">Database</div></div>
+          <div class="panel tech-card" data-reveal data-delay="2"><div class="name">SQL Server</div><div class="role" data-i18n="skills.database">Database</div></div>
+          <div class="panel tech-card" data-reveal><div class="name">DBML / ERD</div><div class="role" data-i18n="tech.role.modeling">Modeling</div></div>
+          <div class="panel tech-card" data-reveal data-delay="1"><div class="name">Cisco</div><div class="role" data-i18n="skills.networking">Networking</div></div>
+          <div class="panel tech-card" data-reveal data-delay="2"><div class="name">MikroTik</div><div class="role" data-i18n="skills.networking">Networking</div></div>
+          <div class="panel tech-card" data-reveal><div class="name">Linux</div><div class="role" data-i18n="tech.role.systems">Systems</div></div>
+          <div class="panel tech-card" data-reveal data-delay="1"><div class="name">Wireshark</div><div class="role" data-i18n="tech.role.analysis">Analysis</div></div>
+          <div class="panel tech-card" data-reveal data-delay="2"><div class="name">EVE-NG</div><div class="role" data-i18n="tech.role.lab">Lab</div></div>
+          <div class="panel tech-card" data-reveal><div class="name">Figma</div><div class="role" data-i18n="skills.design">Design</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11. AI ASSISTANT ============ -->
+    <section id="ai" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">09</span><h2 data-i18n="ai.title">AI Assistant</h2>
+          <p class="lead" data-i18n="ai.lead">A Gemini-powered assistant that answers only about Kakda's skills, projects, certificates, experience, education and contact — in English or Khmer.</p></div></div>
+        <div class="ai-feature">
+          <ul class="feature-list panel" data-reveal>
+            <li><i data-lucide="sparkles" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f1">Gemini integration with a scoped system prompt</span></li>
+            <li><i data-lucide="languages" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f2">English &amp; Khmer answers</span></li>
+            <li><i data-lucide="list-checks" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f3">Suggested questions &amp; quick chips</span></li>
+            <li><i data-lucide="copy" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f4">Copy response, clear chat</span></li>
+            <li><i data-lucide="activity" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f5">Session-only analytics (no tracking)</span></li>
+            <li><i data-lucide="wifi" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f6">Online status + typing indicator</span></li>
+            <li><i data-lucide="shield-check" style="width:18px;height:18px;color:var(--brand-accent)"></i> <span data-i18n="ai.f7">Safe Markdown rendering (input escaped)</span></li>
+          </ul>
+          <div class="chat-launch panel" data-reveal data-delay="1">
+            <h3 data-i18n="ai.launch.title">Ask about the portfolio</h3>
+            <p class="text-muted"><span data-i18n="ai.launch.p1">The API key is held only on the server (</span><code>backend/app/llm</code><span data-i18n="ai.launch.p2">). If the backend is unavailable, the assistant falls back to verified on-page facts.</span></p>
+            <button type="button" class="btn btn-primary" data-open-chat><i data-lucide="message-square" style="width:18px;height:18px"></i> <span data-i18n="ai.open">Open Assistant</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 12. CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head" style="justify-content:center;text-align:center"><div><span class="eyebrow">10</span><h2 data-i18n="contact.title">Get in Touch</h2></div></div>
+        <div class="contact-grid">
+          <form id="contact-form" class="panel" data-reveal novalidate>
+            <div class="form-field">
+              <label for="contact-name" data-i18n="contact.name">Your Name</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your Name" data-i18n-placeholder="contact.name.ph">
+              <span class="field-error" id="err-name" data-error-for="name"></span>
+            </div>
+            <div class="form-field">
+              <label for="contact-email" data-i18n="contact.email">Your Email</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="your@email.com">
+              <span class="field-error" id="err-email" data-error-for="email"></span>
+            </div>
+            <div class="form-field">
+              <label for="contact-message" data-i18n="contact.message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="How can I help you?" data-i18n-placeholder="contact.message.ph"></textarea>
+              <span class="field-error" id="err-message" data-error-for="message"></span>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;margin-top:8px" data-i18n="contact.send">Send Message</button>
+          </form>
+          <div class="contact-links" data-reveal data-delay="1">
+            <a class="contact-link" href="mailto:theakakda60@gmail.com"><i data-lucide="mail" style="width:18px;height:18px"></i> theakakda60@gmail.com</a>
+            <!-- NEEDS USER INPUT: confirm real Telegram / GitHub / LinkedIn URLs before launch. -->
+            <a class="contact-link" href="https://t.me/theakakda" title="NEEDS USER INPUT: Telegram URL"><i data-lucide="send" style="width:18px;height:18px"></i> Telegram</a>
+            <a class="contact-link" href="https://github.com/theakakda" title="NEEDS USER INPUT: GitHub URL"><i data-lucide="github" style="width:18px;height:18px"></i> GitHub</a>
+            <a class="contact-link" href="https://linkedin.com/in/theakakda" title="NEEDS USER INPUT: LinkedIn URL"><i data-lucide="linkedin" style="width:18px;height:18px"></i> LinkedIn</a>
+            <a class="contact-link" href="assets/CV/TheaKakda_CV.pdf.pdf" download><i data-lucide="download" style="width:18px;height:18px"></i> <span data-i18n="contact.cv">Download CV</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 13. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.rights">© 2026 Thea Kakda. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CHAT WIDGET ============ -->
+  <button id="chat-toggle" class="chat-fab" type="button" aria-label="Open AI assistant" data-i18n-aria-label="chat.open.aria" aria-controls="chat-window" aria-expanded="false">
+    <i data-lucide="message-square" id="chat-icon" style="width:26px;height:26px"></i>
+  </button>
+  <div id="chat-window" class="chat-window" role="dialog" aria-label="Kakda AI Assistant" data-i18n-aria-label="chat.title" aria-hidden="true">
+    <div class="chat-head">
+      <div class="who">
+        <div class="avatar"><i data-lucide="bot" style="width:20px;height:20px"></i></div>
+        <div>
+          <div class="chat-title" data-i18n="chat.title">KAKDA AI Assistant</div>
+          <div class="chat-status"><span class="dot-live" aria-hidden="true"></span><span data-i18n="chat.status">Online &amp; ready to chat</span></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:4px">
+        <button id="chat-clear" class="icon-btn" type="button" aria-label="Clear conversation" data-i18n-aria-label="chat.clear"><i data-lucide="trash-2" style="width:18px;height:18px"></i></button>
+        <button id="chat-close" class="icon-btn" type="button" aria-label="Close chat" data-i18n-aria-label="chat.close.aria"><i data-lucide="x" style="width:18px;height:18px"></i></button>
+      </div>
+    </div>
+    <div id="chat-body" class="chat-body scroll-area" role="log" aria-live="polite" aria-label="Chat messages" data-i18n-aria-label="chat.body.aria">
+      <div class="msg-row bot">
+        <div class="avatar"><i data-lucide="bot" style="width:18px;height:18px"></i></div>
+        <div><div class="bubble-bot" data-i18n="chat.greet">Hi! I'm Kakda's AI assistant. Ask me about his skills, projects, certificates, experience or how to contact him.</div></div>
+      </div>
+    </div>
+    <div class="chat-suggestions">
+      <button type="button" class="suggestion" onclick="sendQuickMessage('What are your top skills?')" data-i18n="chat.sug1">Skills?</button>
+      <button type="button" class="suggestion" onclick="sendQuickMessage('Are you available for freelance?')" data-i18n="chat.sug2">Freelance?</button>
+      <button type="button" class="suggestion" onclick="sendQuickMessage('Show me your projects')" data-i18n="chat.sug3">Projects</button>
+      <button type="button" class="suggestion" onclick="sendQuickMessage('How can I contact you?')" data-i18n="chat.sug4">Contact?</button>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="chat-input" class="chat-input" placeholder="Type a message..." data-i18n-placeholder="chat.placeholder" autocomplete="off" aria-label="Message" data-i18n-aria-label="chat.input.aria">
+      <button type="submit" class="chat-send" aria-label="Send message" data-i18n-aria-label="chat.send.aria"><i data-lucide="send" style="width:18px;height:18px"></i></button>
+    </form>
+  </div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="./js/i18n.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <script src="./js/navigation.js" defer></script>
+  <script src="./js/particles.js" defer></script>
+  <script src="./js/contact.js" defer></script>
+  <script src="./js/dashboard.js" defer></script>
+  <script src="./js/chatbot.js" defer></script>
+</body>
+</html>

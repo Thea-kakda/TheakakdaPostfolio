@@ -1,0 +1,102 @@
+/* ============================================================
+   tokens.css — Design system tokens (THEA KAKDA Portfolio V3)
+   Single source of truth for color, type, space, radius, motion.
+   All other stylesheets consume these custom properties only.
+   ============================================================ */
+:root {
+  /* ---- Brand palette (preserved from source projects) ---- */
+  --brand-accent:      #00E5FF;
+  --brand-accent-600:  #00b8d4;
+  --brand-accent-glow: rgba(0, 229, 255, 0.15);
+  --brand-dark:        #0B0F19;
+  --ink:               #05070C;   /* page background */
+  --surface:           #0d1424;   /* elevated panels */
+  --surface-2:         #111a2e;   /* nested surfaces */
+  --surface-3:         #16223a;   /* hover / active surfaces */
+
+  /* ---- Text ---- */
+  --text-strong:  #f1f5f9;
+  --text-body:    #c3cbd8;
+  --text-muted:   #94A3B8;
+  --text-faint:   #64748b;
+
+  /* ---- Lines / borders ---- */
+  --line:        rgba(148, 163, 184, 0.14);
+  --line-strong: rgba(148, 163, 184, 0.28);
+  --line-accent: rgba(0, 229, 255, 0.35);
+
+  /* ---- Category accents (used across skills / tech / charts) ---- */
+  --c-frontend: #00E5FF;
+  --c-backend:  #6366f1;
+  --c-database: #a855f7;
+  --c-network:  #f97316;
+  --c-design:   #ec4899;
+  --c-ai:       #22c55e;
+
+  /* ---- Semantic status ---- */
+  --ok:      #34d399;
+  --ok-bg:   rgba(16, 185, 129, 0.12);
+  --warn:    #fbbf24;
+  --warn-bg: rgba(251, 191, 36, 0.12);
+  --danger:  #f87171;
+  --danger-bg: rgba(248, 113, 113, 0.12);
+
+  /* ---- Typography ---- */
+  --font-heading: "Orbitron", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body:    "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-khmer:   "Noto Sans Khmer", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Fluid type scale (clamp keeps 320→1440 balanced) */
+  --fs-900: clamp(2.25rem, 1.6rem + 3.2vw, 4rem);   /* hero */
+  --fs-800: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --fs-700: clamp(1.35rem, 1.15rem + 1vw, 2rem);     /* section titles */
+  --fs-600: 1.25rem;
+  --fs-500: 1.0625rem;
+  --fs-400: 0.95rem;
+  --fs-300: 0.8125rem;
+  --fs-200: 0.72rem;
+  --fs-100: 0.66rem;
+
+  /* ---- Spacing scale ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --sp-section: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+
+  /* ---- Radius ---- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* ---- Elevation (subtle, SaaS-grade; no excessive glow) ---- */
+  --shadow-1: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  --shadow-2: 0 12px 40px rgba(0,0,0,.5);
+  --shadow-accent: 0 0 0 1px var(--line-accent), 0 12px 40px rgba(0,229,255,.12);
+  --ring: 0 0 0 3px rgba(127, 208, 255, .55);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --dur-1: 120ms;
+  --dur-2: 220ms;
+  --dur-3: 360ms;
+
+  /* ---- Layout ---- */
+  --container: 1180px;
+  --container-narrow: 720px;
+  --header-h: 66px;
+
+  /* ---- Gradients ---- */
+  --grad-accent: linear-gradient(135deg, #00E5FF 0%, #6366f1 100%);
+  --grad-panel: linear-gradient(180deg, rgba(19,28,48,.85), rgba(11,15,25,.85));
+}
+
+/* Khmer script gets a font stack with proper line-height for the script */
+html[lang="km"] body { font-family: var(--font-khmer); line-height: 1.85; }
